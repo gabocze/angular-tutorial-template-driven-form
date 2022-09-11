@@ -17,5 +17,8 @@ export class HeroFormComponent {
   submitted = false;
 
   onSubmit() { this.submitted = true; }
-
+  
+newHero() {
+  this.model = new Hero(42, '', '');
+}
 }
